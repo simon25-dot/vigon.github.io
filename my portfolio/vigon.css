@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+hmtl{
+          scroll-behavior: smooth;
+}
+*{
+          margin:0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+}
+a{
+          text-decoration: none;
+          color:black;
+          font-weight: bold;
+          transition: color 2s ease;
+}
+a:hover{
+          color:white;
+          background-color: black;
+}
+nav .logo img, footer .logo img{
+          width:40px;
+          height: 40px;
+          border-radius: 50%;
+}
+h5{
+          font-size: 20px;
+          color:whitesmoke;
+}
+li{
+          list-style: none;
+}
+nav{
+          background-color: orangered;
+          position:sticky;
+          padding: 0 85px;
+          top:0;
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 80px;
+          box-shadow: 0 5px 80px rgb(0, 0, 0, 0.1);
+}
+nav .logo a, footer .logo a{
+          margin-left: 8px;
+          font-weight: bold;
+          font-size: 20px;
+}
+nav .logo, footer .logo{
+          display:flex;
+          align-items: center;
+}
+nav ul , footer .top ul{
+          display: flex;
+          gap:40px;
+}
+nav.open .logo {
+          display:none;
+}
+nav .open ul{
+          display: flex;
+}
+nav button{
+          color:black;
+          font-weight: bold;
+          background-color: transparent;
+          padding:12px 16px;
+          border-radius: 5px;
+          border:2px solid black;
+          cursor: pointer;
+          transition: all 0.3s ease;
+}
+nav button:hover{
+          background-color: black;
+          border-color:black;
+          color:#fff;
+}
+nav button #menuButton{
+          display:flex;
+          align-items: none;
+          justify-content: center;
+          font-size: 24px;
+          padding: 7px;
+}
+.main{
+          background-color:#403f3f;
+          padding:90px 85px;
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          gap:40px;
+
+}
+.main .left{
+          display:flex;
+          flex-direction: column;
+          align-items: start;
+}
+.main .left h3{
+          margin-top:20px;
+          font-weight:bold;
+          font-size: 46px;
+}
+.main .left h3 span{
+          color:orangered;
+}
+.main .left p{
+          color:rgb(14, 13, 13);
+          font-size: 22px;
+          margin-top: 20px;
+}
+.main .left button {
+          margin-top: 44px;
+          color:#fff;
+          background-color: orangered;
+          padding:14px 24px;
+          border:1px solid transparent;
+}
+
+.main .right img{
+          width:500px;
+          background-image: none;
+}
+.skills{
+          padding:110px 85px 0;
+          background-color:#181717;
+}
+.skills h3,
+.about .right h3,
+.portfolio .header h3,
+.feedback h3{
+          font-size: 40px;
+          margin-top: 20px;
+          color: #ff0000;
+}
+.skills .skill-Items {
+          display: flex;
+          margin-top: 70px;
+          gap: 30px;
+}
+.skills .skill-Items .items {
+          background-color: orangered;
+          width: 25%;
+          border-radius: 10px;
+          padding: 32px;
+          border-bottom: 4px solid transparent;
+          cursor: pointer;
+          transition: all 3s ease;
+      }
+.skills .skill-Items .items:hover{
+          border-color: rgb(227, 224, 224);
+      }
+.skills .skill-Items .items .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: gray;
+          width: 46px;
+          height: 46px;
+          border-radius: 10px;
+          margin-bottom: 22px;
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+      
+
+.skills .skill-Items .items .icon i {
+          font: size 26px;
+          color:rgb(245, 74, 12);
+}
+.skills .skill-Items .items h4,
+.portfolio .portfolio-items .item .info h4 {
+    font-size: 18px;
+}
+
+.skills .skill-Items .items p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+}
+.about{
+          padding:110px;
+          display:flex;
+          align-items: center;
+          gap:60px;
+          background-color: #181717;
+
+}
+.about .left{
+          background-color: orangered;
+          border-radius: 10px 10px 0 0;
+}
+.about .left img{
+          width:440px;
+}
+.about .right p{
+          font-size: 16px;
+          margin-top: 30px;
+          color:#cdc8c8
+}
+.portfolio{
+          background-color: #181717;
+          padding: 110px 85px;
+          border-color: #ff0000;
+
+}
+.portfolio .header{
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 60px;
+}
+.portfolio .header button {
+          background-color: #ff0000;
+          padding: 10px 20px;
+          color:#fff;
+          display:flex;
+          align-items: center; 
+          cursor: pointer;
+          gap:8px;
+          border:none;
+          border-radius: 10px;
+
+}
+.portfolio .header button i{
+          font-size: 26px;
+}      
+.portfolio .portfolio-items {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      
+.portfolio .portfolio-items img{
+          width:100%;
+          height:240px;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 10px 10px 20px 20px;
+}
+.portfolio .portfolio-items .item{
+          width:30%;
+          background-color: orangered;
+          border-radius: 10px;
+          border-bottom: 4px solid transparent;
+          cursor: pointer;
+          box-shadow: 0 5px 32px rgb(0, 0, 0, 0.15);
+          transition: all 0.3s ease;
+}
+.portfolio .portfolio-items .item:hover{
+          border-color:rgb(189, 189, 189);
+}
+.portfolio .portfolio-items .info {
+          display:flex;
+          flex-direction: column;
+          gap:14px;
+          padding:20px 32px 42px;
+}     
+.portfolio .portfolio-items .item .info p{
+          font-size: 15px;
+          color:whitesmoke;
+}
+.portfolio .portfolio-items .item .info a{
+          text-decoration: underline;
+          text-underline-offset: 10px;
+          text-decoration-color: #787878;
+}   
+.portfolio .portfolio-items .item .info a i{
+          margin-left:2px;
+          font-size: 16px;
+}
+.feedback{
+          padding:110px 85px;
+          background-color: #181717;
+
+}
+.feedback .customers{
+          margin-top:  50px;
+          display:flex;
+          gap: 40px;
+}
+.feedback .customers .item .user img {
+          width:40px;
+          height:40px;
+          object-fit: cover;
+          border-radius: 50%;
+}
+.feedback .customers .item {
+          display:flex;
+          flex-direction: column;
+          gap:20px;
+          border:2px solid #ff0000;
+          border-radius: 10px;
+          cursor: pointer;
+          transition:all 0.3s ease;
+}
+.feedback .customers .item .rating{
+          color:orangered;
+          font-size: 22px;
+}
+.feedback .customers .item p{
+          line-height: 22px;
+          font-size: 14px;
+          color:whitesmoke;
+}
+.feedback .customers .item .user{
+          display:flex;
+          align-items: center;
+          gap:10px;
+}
+.feedback .customers .item:hover{
+          border-color:#e4e4e6;
+}
+.feedback .customers .item .user h5{
+          font-size: 13px;
+          font-weight: 500;
+          margin-bottom: 3px;
+          color:whitesmoke;
+
+}
+.feedback .customers .item .user p{
+          font-size: 16px;
+          color:whitesmoke;
+}
+footer{
+          margin-bottom: 900px;
+          padding:85px;
+          display: flex;
+          flex-direction: column;
+          background-color: orangered;
+}
+footer .top,
+footer .bottom{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+footer .top .social-links{
+          display:flex;
+          align-items: center;
+          gap:10px;
+          font-size: 22px;
+
+}
+footer .separator {
+          width:100%;
+          height:1px;
+          background-color: #282938;
+}
+footer .bootom p{
+      font-size: 12px;    
+}
+footer .bottom .links {
+          font-size: 12px;
+          margin-left:14px;
+}
+@media screen and (max-width:1200px) {
+          .main .left h5{
+                    font-size: 18px;
+          }
+          .main .left {
+                    font-size: 36px;
+          }
+          .main .left p{
+                    font-size: 18px;
+          }
+          .main .right img{
+                    width:380px;
+          }
+          .skills .skill-Items{
+                    gap:10px;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+          }
+          .skills .skill-Items .item {
+                    width:49%;
+          }
+          .about .left {
+                    width:370px
+          }
+          .skills h3,
+          .about .right h3,
+          .portfolio .header h3,
+          .feedback h3 {
+                    font-size: 32px;
+          }
+          .about .right p{
+                    font-size: 15px;
+          }
+          .feedback .customers .item .rating{
+                    font-size: 20px;
+
+          }
+          .feedback .customers .item p{
+                    font-size: 13px;
+
+          }
+         footer .top ul{
+          gap:20px
+         } 
+}
+@media screen and (max-width:992px) {
+          nav button{
+                    display:none;
+          }
+          nav ul {
+                   gap:20px; 
+          }
+          nav ul li a{
+                    font-size: 15px;
+
+          }
+          .main{
+                    flex-direction:column ;
+          }
+          .skills .skill-Items {
+                    flex-wrap: wrap; /* Allow items to wrap to the next line */
+                    justify-content: center; /* Center items horizontally */
+                  }
+                  .skills .skill-Items .items {
+                    width: 95%; /* Adjust item width for better distribution */
+                    margin-bottom: 30px; /* Add spacing between items */
+                  }
+          .about{
+                    flex-direction: column;
+                    justify-content: center;
+          }
+          
+          .portfolio .portfolio-items{
+                    gap:22px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+          }
+          .portfolio .portfolio-items .item{
+                    width:48%;
+          }
+          .feedback .customers{
+                    gap:14px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+          }
+          .feedback .customers .item{
+                    width:48%;
+          }
+          footer .top ul{
+                    display:none;
+          }
+
+}
+@media screen and (max-width:768px) {
+          nav {
+                    justify-content: space-between;
+                    padding: o 42px;
+          }
+          nav ul{
+                    display: none;
+          }
+          nav button#menuButton{
+                    display:flex;
+          }
+          .main{
+                    padding:42px;
+          }
+       .skills{
+          padding: 85px 42px 0;
+       }   
+       .skills .skill-Items{
+          gap:10px;
+       }
+       .about{
+          padding:85px 42px;
+       }
+       .portfolio{
+          padding: 60px 42px;
+       }
+       .portfolio .portfolio-items{
+          gap:18px;
+       }
+       .feedback{
+          padding: 85px 42px;
+       }
+       footer{
+          padding: 85px 42px;
+       }
+       footer .bottom{
+          flex-direction: column-reverse;
+          gap:14px;
+       }
+}
+ @media screen and (max-width:576px) {
+          
+nav button {
+                    /* Adjust the button styling for smaller screens */
+           padding: 10px 16px;
+           font-size: 14px;
+          }
+          .skills .skill-Items {
+                    flex-direction: column; /* Stack items vertically on smaller screens */
+                  }
+                  .skills .skill-Items .items {
+                    width: 100%; /* Occupy full width */
+                    margin-bottom: 20px; /* Add some space between items */
+                  }
+
+          nav ul li a {
+          font-size: 13px;
+       }
+          nav .logo a{
+          font-size:18px;
+
+        } 
+        .main .left p{
+          font-size: 16px;
+        }
+        .main .left h3{
+          font-size: 32px;
+        }
+        .main .left button {
+          width:100%;
+        }
+        .skills .skill-Items .item{
+          width:100%;
+        }
+        .portfolio .portfolio-items .item{
+          width:100%;
+        }
+        .portfolio .header{
+          font-size: 12px;
+          padding:8px 14px;
+        }
+        .feedback .customers .item{
+          width: 100%;
+        }
+
+ }
